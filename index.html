@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Calculadora HTML CSS JS - Alan</title>
+
+</head>
+<body>
+    <div class="calculadora">
+        
+        <div class="tela-calc">
+            <input id="tela" placeholder="0" disabled>
+            <h2 id="historico"></h2>
+        </div>
+    
+        <div class="linha">
+            <button class="botao botao-funcao" onclick="limpar()">C</button>
+            <div></div>
+            <div></div>
+            <button class="botao botao-op" onclick="add_operador('/')">/</button>
+        </div>
+        <div class="linha">
+            <button class="botao" onclick="add_numero(7)">7</button>
+            <button class="botao" onclick="add_numero(8)">8</button>
+            <button class="botao" onclick="add_numero(9)">9</button>
+            <button class="botao botao-op" onclick="add_operador('*')">*</button>
+        </div>
+        <div class="linha">
+            <button class="botao" onclick="add_numero(4)">4</button>
+            <button class="botao" onclick="add_numero(5)">5</button>
+            <button class="botao" onclick="add_numero(6)">6</button>
+            <button class="botao botao-op" onclick="add_operador('-')">-</button>
+        </div>
+        <div class="linha">
+            <button class="botao" onclick="add_numero(1)">1</button>
+            <button class="botao" onclick="add_numero(2)">2</button>
+            <button class="botao" onclick="add_numero(3)">3</button>
+            <button class="botao botao-op" onclick="add_operador('+')">+</button>
+        </div>
+        <div class="linha">
+            <button class="botao" onclick="add_numero(0)">0</button>
+            <button class="botao" onclick="add_numero('.')">.</button>
+            <button class="botao botao-total" onclick="total()">=</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>
